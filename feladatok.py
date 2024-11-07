@@ -27,3 +27,28 @@ def feladat4(nev:str):
         nevek.append(nev)
     db:int = len(nevek)
     print(f"A felhasználó {db} nevet adott meg.")
+
+def feladat5(tipp):
+    felhasznalo_tippje = tipp.lower()
+    gep_tipp = int(random.random() * 3) + 1
+    if (gep_tipp == 1):
+        gep_tipp = "kő"
+    elif (gep_tipp == 2):
+        gep_tipp = "papír"
+    elif (gep_tipp == 3):
+        gep_tipp = "olló"
+
+    if (felhasznalo_tippje == gep_tipp):
+        print("Döntetlen")
+    elif (felhasznalo_tippje == "olló") and (gep_tipp == "papír"):
+        print("Győztél")
+    elif (felhasznalo_tippje == "olló") and (gep_tipp == "kő"):
+        print("Vesztettél")
+    elif (felhasznalo_tippje == "kő") and (gep_tipp == "papír"):
+        print("Vesztettél")
+    elif (felhasznalo_tippje == "kő") and (gep_tipp == "olló"):
+        print("Nyertél")
+    elif (felhasznalo_tippje == "papír") and (gep_tipp == "olló"):
+        print("Vesztettél")
+    elif (felhasznalo_tippje == "papír") and (gep_tipp == "kő"):
+        print("Nyertél")

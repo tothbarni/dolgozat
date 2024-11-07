@@ -13,3 +13,7 @@ n_betu = feladatok.feladat3("Ez az én dumám", 4)
 print("4. feladat")
 nev:str = input("Adj meg egy nevet, vagy lépj ki '@'-karakterrel : ")
 feladatok.feladat4(nev)
+
+print("5. feladat")
+tipp:str = input("Tipped: ")
+feladatok.feladat5(tipp)
