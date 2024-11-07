@@ -11,3 +11,11 @@ def feladat2():
         if (szam % 3 == 0):
             db += 1
     return db
+
+def feladat3(szoveg:str, N:int):
+    if (len(szoveg) < N):
+        print(f"Nincs {N}. karakter!")
+    else:
+        karakter:str = (szoveg[N])
+        n_betu:str = str(karakter.upper())
+        print(str(n_betu) * 3)
