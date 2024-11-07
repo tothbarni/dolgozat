@@ -18,4 +18,4 @@ def feladat3(szoveg:str, N:int):
     else:
         karakter:str = (szoveg[N])
         n_betu:str = str(karakter.upper())
-        print(str(n_betu) * 3)
+        print(f"A szöveg {N}. karaktere {karakter} - {str(n_betu) * 3}")
