@@ -3,6 +3,7 @@ def feladat1():
     szam:int = int(input("Kérek egy páros számot : "))
     while (szam % 2 != 0):
         szam:int = int(input("Ez nem páros! PÁROS számot kérek! "))
+    print(szam)
 
 def feladat2():
     db = 0
@@ -37,7 +38,7 @@ def feladat5(tipp):
         gep_tipp = "papír"
     elif (gep_tipp == 3):
         gep_tipp = "olló"
-
+        
     if (felhasznalo_tippje == gep_tipp):
         print("Döntetlen")
     elif (felhasznalo_tippje == "olló") and (gep_tipp == "papír"):
@@ -52,3 +53,4 @@ def feladat5(tipp):
         print("Vesztettél")
     elif (felhasznalo_tippje == "papír") and (gep_tipp == "kő"):
         print("Nyertél")
+
