@@ -9,3 +9,7 @@ print(f"A számok között {db}db 3-mal osztható szám van!")
 
 print("3. feladat")
 n_betu = feladatok.feladat3("Ez az én dumám", 4)
+
+print("4. feladat")
+nev:str = input("Adj meg egy nevet, vagy lépj ki '@'-karakterrel : ")
+feladatok.feladat4(nev)

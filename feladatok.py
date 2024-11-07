@@ -19,3 +19,11 @@ def feladat3(szoveg:str, N:int):
         karakter:str = (szoveg[N])
         n_betu:str = str(karakter.upper())
         print(f"A szöveg {N}. karaktere {karakter} - {str(n_betu) * 3}")
+
+def feladat4(nev:str):
+    nevek = []
+    while (nev != "@"):
+        nev:str = input("Adj meg egy nevet, vagy lépj ki '@'-karakterrel : ")
+        nevek.append(nev)
+    db:int = len(nevek)
+    print(f"A felhasználó {db} nevet adott meg.")
